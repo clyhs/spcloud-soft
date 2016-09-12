@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: cloud
+---
+spring:
+  profiles: cloud
+  jpa:
+    show_sql: false
+    database: MYSQL
+    hibernate:
+      ddl-auto: none
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-kb.cfapps.io/eureka/
+  instance:
+    hostname: movie-kb.cfapps.io
+    nonSecurePort: 80
+ribbon:
+  eureka:
+    enabled: true
