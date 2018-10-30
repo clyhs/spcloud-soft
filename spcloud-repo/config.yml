@@ -11,7 +11,8 @@ spring:
         enabled: true
       server:
         git:
-          uri: https://github.com/kbastani/spring-boot-microservice-config
+          uri: https://github.com/clyhs/spcloud-soft
+		  search-paths: spcloud-repo
         health:
           repositories:
             movie:
@@ -29,11 +30,11 @@ endpoints:
     sensitive: false
 eureka:
   instance:
-    hostname: config-99.cfapps.io
+    hostname: localhost
     nonSecurePort: 80
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery-kb.cfapps.io/eureka/
+      defaultZone: http://localhost/eureka/
 

@@ -15,4 +15,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/kbastani/spring-boot-microservice-config
+          uri: https://github.com/clyhs/spcloud-soft
+          search-paths: spcloud-repo
