@@ -17,5 +17,5 @@ spring:
         git:
           uri: https://github.com/clyhs/spcloud-soft
           search-paths: spcloud-repo
-          username: clyhs
-          password: 281984clyhs
+          username: 
+          password: 
